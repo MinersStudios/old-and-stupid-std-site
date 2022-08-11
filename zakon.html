@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head itemscope itemtype="http://schema.org/WebPage">
+                <style>
+        ::-webkit-scrollbar
+        {
+            height:.5rem;
+            width:.5rem
+        }
+        ::-webkit-scrollbar-track
+        {
+            --tw-bg-opacity:1;
+            background-color: #ff821f00;
+        }
+        ::-webkit-scrollbar-thumb
+        {
+            border-radius:.5rem;
+            --tw-bg-opacity:1;
+            background-color: #ff9847f5;
+        }
+        body,html
+        {
+        scroll-behavior:smooth;
+        }
+    </style>
+    <link href="/minecraft_font.css" rel="stylesheet" type="text/css">
+        <style>img[alt="www.000webhost.com"] {display: none;}</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <link rel="shortcut icon" href="/CTD2.ico" type="image/x-icon">
+
+        <title>СТД - Закон</title>
+        <meta name="description" content="СТД Закон - та самая штука которую никто не читает"/>
+        <meta name="keywords" content="СТД Закон"/>
+        <meta itemprop="name" content="Закон сервера"/>
+        <meta itemprop="description" content="СТД Закон - та самая штука которую никто не читает"/>
+        <meta property="og:url" content="/zakon.html"/>
+        <meta property="og:site_name" content="Закон сервера"/>
+        <meta property="og:title" content="СТД - РП"/>
+        <meta property="og:description" content="СТД Закон - та самая штука которую никто не читает"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="/std_rules.png"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@thedrmine_"/>
+        <meta name="twitter:title" content="Добро пожаловать на сервер СТД!"/>
+        <meta name="twitter:description" content="СТД Закон - та самая штука которую никто не читает"/>
+        <meta name="twitter:image" content="/std_rules.png"/>
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        
+                <style type="text/css">
+        svg {
+  height: 80px;
+  position: absolute;
+  width: 80px;
+}
+.plates {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 160px;
+  width: 640px;
+}
+@media (max-width: 640px) {
+  .plates {
+    width: 320px;
+  }
+}
+.plate {
+  height: 80px;
+  width: 80px;
+}
+.burger {
+  filter: url(#gooeyness);
+}
+.x {
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+.x .line {
+  stroke-width: 5.5px;
+}
+/* Die vierte teller */
+.plate4 .x {
+  transition: transform 400ms;
+}
+.plate4 .line {
+  transform-origin: 50%;
+  transition: transform 400ms 100ms;
+}
+.active.plate4 .line {
+  transition: transform 400ms;
+}
+.active.plate4 .line1 {
+  transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
+}
+.active.plate4 .line2 {
+  transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
+}
+.active.plate4 .line3 {
+  transform: translateY(0px) rotate(45deg) scale(.7);
+}
+.active.plate4 .line4 {
+  transform: translateY(0px) rotate(-45deg) scale(.7);
+}
+.active.plate4 .line5 {
+  transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
+}
+.active.plate4 .line6 {
+  transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
+}
+.active.plate4 .x {
+  transition: transform 400ms 100ms;
+  transform: scale(1);
+}
+
+    </style>
+
+        <style type="text/css">
+            html, body {
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.85vw;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            body {
+                animation: transitionIn 1s;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                align-items: center;
+                -webkit-box-align: center;
+                -moz-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                justify-content: flex-start;
+                background:#000;
+                color:#fff;
+            }
+
+            p {
+                -webkit-margin-after: 0px;
+                -webkit-margin-before: 0px;
+                font-size: 14px;
+                color: #9e9e9e;
+                line-height: 21px;
+                margin-bottom: 4px;
+                line-height: 1.71;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            a {
+                font-size: 14px;
+                color: #ffffff;
+                line-height: 1.71;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            a:hover, a:active, a:focus {
+                color: #ffaa2a;
+                text-decoration: none;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: normal;
+                margin: 0;
+            }
+
+            .heading-1 {
+                font-size: 48px;
+                line-height: 1.25;
+                color: #fdc36b;
+                font-family: 'Minecraft-Ten';
+                letter-spacing: 2px;
+            }
+
+            img {
+                max-width: 49vw;
+                height: auto;
+            }
+
+            .flex {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+
+            .flex-row-col-768 {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+
+            .flex-row-col-991 {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+
+            .flex-1 {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+
+            .flex-column {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+
+            .flex-basis-48 {
+                flex-basis: 48%;
+            }
+
+            .flex-basis-32 {
+                flex-basis: 32%;
+            }
+
+            .full-width {
+                width: 100%;
+            }
+
+            .text-align-right {
+                text-align: right;
+            }
+
+            .text-align-left {
+                text-align: left;
+            }
+
+            .align-items-center {
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .align-items-flex-end {
+                -webkit-box-align: flex-end;
+                -ms-flex-align: flex-end;
+                align-items: flex-end;
+            }
+
+            .justify-content-evenly {
+                justify-content: space-evenly;
+            }
+
+            .justify-content-space-between {
+                justify-content: space-between;
+            }
+
+            .justify-content-center {
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
+            .justify-content-flex-end {
+                justify-content: flex-end;
+            }
+
+            .padding-30 {
+                padding: 30px;
+            }
+
+            .no-margin {
+                margin: 0;
+            }
+
+            .ml-mr-10 {
+                margin: 0 10px;
+            }
+
+            .ml-15 {
+                margin-left: 15px;
+            }
+            
+            .ml-205 {
+                margin-left: 205px;
+            }
+
+            .mr-10 {
+                margin-right: 10px;
+            }
+
+            .mr-30 {
+                margin-right: 30px;
+            }
+
+            .mr-60 {
+                margin-right: 60px;
+            }
+
+            .mb-10 {
+                margin-bottom: 10px;
+            }
+
+            .mb-20 {
+                margin-bottom: 20px;
+            }
+
+            .mb-30 {
+                margin-bottom: 30px;
+            }
+
+            .mb-50 {
+                margin-bottom: 50px;
+            }
+            
+            .mb-56 {
+                margin-bottom: 19rem;
+            }
+
+            .mb-70 {
+                margin-bottom: 70px;
+            }
+
+            .mb-140 {
+                margin-bottom: 140px;
+            }
+
+            .mb-200 {
+                margin-bottom: 200px;
+            }
+
+            .text-color-white {
+                color: #ffffff;
+            }
+
+            .text-align-center {
+                text-align: center;
+            }
+
+            /* ----- Button Styling Start ----- */
+
+            .button {
+                border-radius: 8.5rem;
+                position: relative;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                min-width: 120px;
+                min-height: 44px;
+                vertical-align: middle;
+                text-align: center;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+                font-size: 14px;
+                font-weight: bold;
+                overflow: hidden;
+                outline: none;
+                cursor: pointer;
+                -webkit-transition: -webkit-box-shadow 0.2s;
+                transition: -webkit-box-shadow 0.2s;
+                -o-transition: box-shadow 0.2s;
+                transition: box-shadow 0.2s;
+                transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+            }
+            /* Overlay */
+            .button:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgb(255, 255, 255);
+                opacity: 0;
+                -webkit-transition: opacity 0.2s;
+                -o-transition: opacity 0.2s;
+                transition: opacity 0.2s;
+            }
+            .button:hover:before {
+                opacity: 0.08;
+            }
+            .button:focus:before {
+                opacity: 0.24;
+            }
+            .button:hover:focus:before {
+                opacity: 0.3;
+            }
+
+            .button:active:after {
+                opacity: 0.32;
+                -webkit-transform: translate(-50%, -50%) scale(0);
+                -ms-transform: translate(-50%, -50%) scale(0);
+                transform: translate(-50%, -50%) scale(0);
+                -webkit-transition: -webkit-transform 0s;
+                transition: -webkit-transform 0s;
+                -o-transition: transform 0s;
+                transition: transform 0s;
+                transition: transform 0s, -webkit-transform 0s;
+            }
+
+            /* ----- Primary Button Start ----- */
+
+            .button--primary {
+                border: none;
+                color: rgb(255, 255, 255);
+                background-color: #ff821f;
+                -webkit-box-shadow: 0 2px 12px -6px #ffaa2a;
+                box-shadow: 0 2px 12px -6px #ffaa2a;
+            }
+            /* Hover, Focus */
+            .button--primary:hover, .button--primary:focus {
+                color: rgb(255, 255, 255);
+                -webkit-box-shadow: 0 2px 16px -6px #ffaa2a;
+                box-shadow: 0 2px 16px -6px #ffaa2a;
+            }
+            /* Active */
+            .button--primary:active {
+                -webkit-box-shadow: 0 6px 20px -6px #ffaa2a;
+                box-shadow: 0 6px 20px -6px #ffaa2a;
+            }
+            /* Ripple */
+            .button--primary:after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                border-radius: 50%;
+                width: 20rem; /* Safari */
+                height: 20rem; /* Safari */
+                background-color: rgb(255, 255, 255);
+                opacity: 0;
+                -webkit-transform: translate(-50%, -50%) scale(1);
+                -ms-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
+                -webkit-transition: opacity 1s, -webkit-transform 0.5s;
+                transition: opacity 1s, -webkit-transform 0.5s;
+                -o-transition: opacity 1s, transform 0.5s;
+                transition: opacity 1s, transform 0.5s;
+                transition: opacity 1s, transform 0.5s, -webkit-transform 0.5s;
+            }
+
+            /* ----- Primary Button End ----- */
+
+            /* ----- Underline Button Start ----- */
+
+            .button-underline {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.71;
+                letter-spacing: 0.5px;
+                color: #ffbd5b;
+                text-decoration: underline;
+            }
+
+            .button-underline:hover {
+                text-decoration: underline;
+                filter: brightness(90%);
+            }
+
+            .button-underline--icon {
+                font-size: 12px;
+                -o-transition: transform .3s;
+                transition: transform .3s, -webkit-transform .3s;
+                -webkit-transition: -webkit-transform .3s;
+                transition: transform .3s;
+            }
+
+            .button-underline:hover .button-underline--icon {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+            }
+
+            /* ----- Underline Button End ----- */
+
+            /* ----- Button Styling End ----- */
+
+            .header-info-container__hostname {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.71;
+                letter-spacing: 0.5px;
+                color: #9e9e9e;
+            }
+
+            .whats-next__info-container {
+                max-width: 350px;
+            }
+
+            .mobile-nav {
+                display: none;
+            }
+
+            .ideas-section__card {
+                min-height: 450px;
+                padding: 30px;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            .ideas-section-card__heading {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.33;
+                color: #070707;
+            }
+
+            .ideas-section-card__icon {
+                color: #ffaa2a;
+                font-size: 16px;
+            }
+
+            .footer {
+                height: 300px;
+                background-color: #131313;
+            }
+
+            .footer__icon-container {
+                width: 36px;
+                height: 36px;
+                background-color: #070707;
+                border-radius: 50%;
+            }
+
+            .footer__icon {
+                color: #ffaa2a;
+                font-size: 18px;
+            }
+
+            .footer__link {
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                font-weight: normal;
+                -o-transition: color .3s;
+                -webkit-transition: color .3s;
+                transition: color .3s;
+                text-transform: lowercase;
+            }
+
+            .footer__link:hover {
+                color: #ffaa2a;
+            }
+
+            .nav__hamburger {
+                font-size: 24px;
+            }
+
+            .navigation-container {
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            .navigation-container-center {
+                display: flex;
+                justify-content: center;
+            }
+
+            .navigation {
+                display: flex;
+                align-items: center;
+            }
+
+            .nav-item__link {
+                margin-left: 60px;
+            }
+
+            .small-link {
+                font-size: 12px;
+                text-transform: capitalize;
+                color: #ffffff;
+                text-decoration:underline;
+            }
+
+            .go-premium-section__button {
+                min-width: 160px;
+            }
+
+            .go-premium-section__paragraph {
+                width: 60%;
+                margin: auto;
+            }
+
+            @media screen and (max-width: 991px) {
+                .navigation {
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+                .nav-item__link {
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+                .header {
+                    margin-bottom: 60px;
+                }
+                .whats-next {
+                    margin-bottom: 60px;
+                }
+                .heading-1 {
+                    font-size: 36px;
+                }
+                .ideas-section {
+                    margin-bottom: 20px;
+                }
+                .ideas-section__card {
+                    margin: 0 auto 50px auto;
+                    width: 60%;
+                }
+                .go-premium-section__paragraph {
+                    width: 100%;
+                }
+                .flex-row-col-991 {
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            }
+            
+
+            @media screen and (max-width: 768px) {
+                .navigation {
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+                .nav-item__link {
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+                .header-navigation {
+                    margin-bottom: 30px;
+                }
+                .header-info-container {
+                    text-align: center;
+                }
+                .heading-1 {
+                    font-size: 36px;
+                }
+                .header {
+                    margin-bottom: 100px;
+                }
+                .whats-next {
+                    align-items: center;
+                    margin-bottom: 60px;
+                }
+                .whats-next__info-container {
+                    order: 2;
+                    text-align: center;
+                }
+                .whats-next__corgi {
+                    order: 1;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .ideas-section {
+                    margin-bottom: 30px;
+                }
+                .ideas-section__card {
+                    margin: 0 auto 30px auto;
+                    width: 75%;
+                }
+                .footer__logo {
+                    margin: 0 0 20px 0;
+                }
+                .go-premium-section {
+                    margin-bottom: 30px;
+                }
+                .flex-row-col-768 {
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                .heading-1 {
+                    font-size: 32px;
+                }
+                .ideas-section__card {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            
+            @media (max-width:768px) {
+                .need-hide{
+                    display:none;
+                }
+            }
+            @media (min-width:768px) {
+                .need-wow{
+                    display:none;
+                }
+            }
+            
+            .mt-32 {
+                margin-top:4rem;
+            }
+            .page-bg {
+                min-height:600px;
+                height:70vh;
+                z-index:-1;
+                background:url(/dc63092.png) bottom no-repeat;
+                background-size:cover
+            }
+            .page-bg, .page-bg:after {
+                position:absolute;
+                top:0;
+                left:0;
+                right:0
+            }
+            .page-bg:after {
+                content:"";
+                bottom:0;
+                background:linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8) 60%,#000)
+            }
+            .page-bg[data-page=home]:after {
+                background:linear-gradient(180deg,rgba(129,80,133,.7),transparent 18%,rgba(0,0,0,.2) 60%,#000)
+            }
+            .logo{
+                display:inline-block;
+                max-width:490px;
+                width:92%;
+                position:relative
+            }
+            .logo .img{
+                background:url(std_rules.png) 50% no-repeat;background-size:contain;
+                padding-bottom:50.25%
+            }
+            .hero {
+                position:relative;
+                width:100%;
+                display:flex;
+                flex-direction:column
+                
+            }
+            @media (max-width:992px) {
+                .hero{
+                    height:600px
+                }
+            }
+                .floating-button {
+  text-decoration: none;
+  border-radius: 45px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+.floating-button:hover {
+  background: #ff821f;
+  box-shadow: 0 15px 20px #ff821f26;
+  color: white;
+  transform: translateY(-8px);
+  
+    
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    max-width: 29vw;
+}
+            .sh {
+    font-family: 'Minecraft-Ten';
+    font-size: 64px;
+    text-align: center;
+    color: #c1c1c1;
+    padding-top: 5rem;
+    word-wrap: break-word;
+    width: 100%;
+    text-shadow: 5px 5px 0 #5252527a;
+}
+.sh-op {
+    font-family: 'Minecraft-Ten';
+    font-size: 25px;
+    text-align: center;
+    color: #7d6953;
+    padding-bottom: 16rem;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container padding-30">
+            <nav class=" header-navigation navbar navbar-expand-lg mb-70">
+                <a href="/" class="navbar-brand"><img src="/std2_t.png" alt="STD" width="160"></a>
+                <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true">
+    <div class="plate plate4" onclick="this.classList.toggle('active')">
+    <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+      <path class="line line1" d="M 50 35 H 30"></path>
+      <path class="line line2" d="M 50 35 H 70"></path>
+      <path class="line line3" d="M 50 50 H 30"></path>
+      <path class="line line4" d="M 50 50 H 70"></path>
+      <path class="line line5" d="M 50 65 H 30"></path>
+      <path class="line line6" d="M 50 65 H 70"></path>
+    </svg>
+    <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+      <path class="line" d="M 34 32 L 66 68"></path>
+      <path class="line" d="M 66 32 L 34 68"></path>
+    </svg>
+  </div>
+</div>
+                <div class=" collapse navbar-collapse navigation-container" id="navbarSupportedContent">
+                    <ul class="navbar-nav navigation">
+                        <li class="nav-item"><a href="/wiki/wiki.html" class="nav-item__link nav-link">Вики</a></li>
+                        <li class="nav-item"><a href="/zakon.html" class="nav-item__link nav-link">Закон</a></li>
+                        <li class="nav-item"><a href="https://account.ely.by/login" class="button button--primary nav-item__link nav-link">Cкин</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="page-bg " style="background-image: url(/wallpapers/x6x31f3agf851.jpg);"></div>
+            <div class="hero mb-56">
+
+                <div class=" logo mx-auto mt-32"><div class="img"></div></div>
+                <div class="sh-op">Закон всё ещё не написан<br>В скором времени эта вкладка будет пополняться</div>
+          </div>
+            </div>
+<footer class=" footer full-width flex flex-column justify-content-center align-items-center">
+            
+            <div class="flex flex-row-col-768 align-items-center justify-content-center">
+<img src="/minersstudios.png" width="150" alt="MINERS STUDIOS" class="footer__logo">
+</div>
+<p class="text-align-center">Made by <a href="https://minersstudios.github.io" target="_blank"><strong>MINERS STUDIOS</strong></a></p>
+        </footer>
+
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" type="text/javascript"></script>
+          <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        </body>
+</html>
